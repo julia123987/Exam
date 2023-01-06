@@ -155,7 +155,7 @@ header{
     background-size: cover;
 }
 #section4{
-    height: 75vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,9 +166,10 @@ header{
     width: 95%;
     text-align: center;
     justify-content: center;
+    margin-top: 50px;
 }
 .gallery{
-    width: 90%;
+    width: 100%;
     height: 45vh;
     display: flex;
     flex-wrap: wrap;
@@ -259,74 +260,104 @@ header{
     border-radius: 5px;
     background-color: transparent;
 }
-
-/* .foto2 .foto img{
-    width: 250px;
+#section5{
+    height: 100vh;
+}
+.block8{
+    width: 100%;
     height: 100%;
-    position: relative;
-    z-index: 1; 
-} */
-/* .foto2:hover .cover1{
     display: flex;
-    cursor: pointer;
-} */
-/* .foto3 .foto img{
-    width: 250px;
-    height: 100%;
-    position: relative;
-    z-index: 1; 
-} */
-/* .foto3:hover .cover1{
+    flex-wrap: wrap;
+    align-content: center;
+    /* display: grid;
+    grid-template-areas: 
+    'card1 card2 card3'
+    'card4 card5 card6'; */
+    /* grid-gap: 20px; */
+    justify-content: center;
+}
+.block8 p{
+    font-size: 22px;
+    line-height: 28px;
+}
+.block8 p.title1{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+}
+.card1{
+    width: 30%;
+    height: 300px;
+    grid-area: card1;
     display: flex;
-    cursor: pointer;
-} */
-/* .foto1 img{
-    width: 250px;
-    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.293);
+    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    padding: 10px;
 }
-.foto2 img{
-    width: 250px;
-    height: 100%;
+.card2{
+    width: 30%;
+    height: 300px;
+    grid-area: card2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.293);
+    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    padding: 10px;
+    text-align: center;
 }
-.foto3 img{
-    width: 250px;
-    height: 100%;
+.card3{
+    width: 30%;
+    height: 300px;
+    grid-area: card3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.293);
+    padding: 10px;
+    text-align: center;
+   
 }
-.foto4 img{
-    width: 250px;
-    height: 100%;
+.card4{
+    width: 30%;
+    height: 300px;
+    grid-area: card4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    padding: 10px;
+    text-align: center;
+    margin-top: 0;
 }
-.foto5 img{
-    width: 250px;
-    height: 100%;
-} */
+.card5{
+    width: 30%;
+    height: 300px;
+    grid-area: card5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    padding: 10px;
+    text-align: center;
+}
+.card6{
+    width: 30%;
+    height: 300px;
+    grid-area: card6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
 
-/* .foto1{
-    width: 20vh;
-    height: 100%;
-    background-image: url(./anastasiia-malai-jrD2KapmNwM-unsplash.jpg);
-    background-size: cover;
-}
-.foto2{
-    width: 20vh;
-    height: 100%;
-    background-image: url(./shana-van-roosbroek-rwiLwcpHEyw-unsplash.jpg);
-    background-size: cover;
-}
-.foto3{
-    width: 20vh;
-    height: 100%;
-    background-image: url(./thayran-melo-6TGmpFB72RE-unsplash.jpg);
-    background-size: cover;
-}
-.foto4{
-    width: 250px;
-    height: 100%;
-    background-image: url(./yaniv-cohen-DxsavJrtuZg-unsplash.jpg);
-    background-size: cover;
-}
-.foto5{
-    width: 250px;
-    height: 100%;
-    background-image: url(./tetiana-shadrina-X4YjqVCn7xI-unsplash.jpg);
-    background-size: cover; */
