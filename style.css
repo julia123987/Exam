@@ -468,6 +468,28 @@ header{
 .but5 :hover{
     cursor: pointer;
 }
+footer{
+    height: 25vh;
+}
+.foot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 25vh;
+}
+.foot ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.foot ul img{
+    filter: invert(30%);
+    padding: 15px;
+    margin: 5px;
+    border: 2px solid rgba(117, 117, 117, 0.37);
+    border-radius: 50%;
+}
 
 
 
