@@ -9,21 +9,21 @@ html{
 }
 p.caption{
     font-style: normal;
-    font-size: 62px;
+    font-size: 42px;
     font-family: 'EB Garamond', serif;
-    line-height: 70px;
+    line-height: 50px;
     margin: 15px;
 }
 p{
     font-style: normal;
-    font-size: 32px;
+    font-size: 23px;
     font-family: 'EB Garamond', serif;
-    line-height: 40px;
+    line-height: 30px;
     margin: 15px;
 }
 p.sm{
     font-style: normal;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'EB Garamond', serif;
     line-height: 30px;
     margin: 15px;
@@ -40,7 +40,7 @@ header{
     text-decoration: none;
     color:black;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
 }
 .nav1,
 .nav2{
@@ -62,10 +62,12 @@ header{
     font-size: 25px;
 }
 .nav2{
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
 .nav2 ul{
     display: flex;
+    display: none;
     list-style-type: none;
     justify-content: space-between;
 }
@@ -178,8 +180,6 @@ header{
     width: 50px;
     height: 30px;
 }
-
-
 #section1{
     height: 100vh;
     display: flex;
@@ -192,8 +192,8 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
 }
 .block2{
     width: 50%;
@@ -222,37 +222,37 @@ header{
 }
 #section2,
 #section3{
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: row;
     border-bottom: 2px solid rgba(192, 192, 192, 0.425);
 }
 .block3{
-    width: 30%;
+    width: 50%;
     display: flex;
     background-image: url(./tetiana-shadrina-X4YjqVCn7xI-unsplash.jpg);
     background-size: cover;
 }
 .block4{
-    width: 70%;
-    height: 60vh;
+    width: 50%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    /* padding-right: 60px; */
+    padding-right: 0px;
+    padding-left: 5px;
 }
 .block5{
-    width: 70%;
-    height: 60vh;
+    width: 50%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 20px;
+    padding-left: 5px;
+    padding-right: 0px;
 }
 .block6{
-    width: 30%;
+    width: 50%;
     display: flex;
     background-image: url(./yaniv-cohen-DxsavJrtuZg-unsplash.jpg);
     background-size: cover;
@@ -326,14 +326,14 @@ header{
 .arrow2 .arrow{
     filter: invert(100%);
     position: relative;
-    left: -100px;
+    left: -120px;
     top: 50%;
     z-index: 3;
 }
 .arrow1 .arrow{
     filter: invert(100%);
     position: relative;
-    left: 100px;
+    left: 120px;
     top: 50%;
     z-index: 3;
 }
@@ -364,7 +364,7 @@ header{
     background-color: transparent;
 }
 #section5{
-    height: 100vh;
+    height: 150vh;
 }
 .block8{
     width: 100%;
@@ -389,7 +389,7 @@ header{
     line-height: 28px;
 }
 .card1{
-    width: 30%;
+    width: 45%;
     height: 300px;
     grid-area: card1;
     display: flex;
@@ -402,7 +402,7 @@ header{
     padding: 10px;
 }
 .card2{
-    width: 30%;
+    width: 45%;
     height: 300px;
     grid-area: card2;
     display: flex;
@@ -410,12 +410,11 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.293);
-    border-right: 2px solid rgba(0, 0, 0, 0.293);
     padding: 10px;
     text-align: center;
 }
 .card3{
-    width: 30%;
+    width: 45%;
     height: 300px;
     grid-area: card3;
     display: flex;
@@ -423,25 +422,26 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.293);
+    border-right: 2px solid rgba(0, 0, 0, 0.293);
     padding: 10px;
     text-align: center;
    
 }
 .card4{
-    width: 30%;
+    width: 45%;
     height: 300px;
     grid-area: card4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.293);
     padding: 10px;
     text-align: center;
     margin-top: 0;
 }
 .card5{
-    width: 30%;
+    width: 45%;
     height: 300px;
     grid-area: card5;
     display: flex;
@@ -453,7 +453,7 @@ header{
     text-align: center;
 }
 .card6{
-    width: 30%;
+    width: 45%;
     height: 300px;
     grid-area: card6;
     display: flex;
@@ -593,6 +593,3 @@ footer{
     border: 2px solid rgba(117, 117, 117, 0.37);
     border-radius: 50%;
 }
-
-
-
