@@ -9,21 +9,21 @@ html{
 }
 p.caption{
     font-style: normal;
-    font-size: 62px;
+    font-size: 42px;
     font-family: 'EB Garamond', serif;
-    line-height: 70px;
+    line-height: 50px;
     margin: 15px;
 }
 p{
     font-style: normal;
-    font-size: 32px;
+    font-size: 23px;
     font-family: 'EB Garamond', serif;
-    line-height: 40px;
+    line-height: 30px;
     margin: 15px;
 }
 p.sm{
     font-style: normal;
-    font-size: 25px;
+    font-size: 23px;
     font-family: 'EB Garamond', serif;
     line-height: 30px;
     margin: 15px;
@@ -40,7 +40,7 @@ header{
     text-decoration: none;
     color:black;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
 }
 .nav1,
 .nav2{
@@ -62,10 +62,12 @@ header{
     font-size: 25px;
 }
 .nav2{
-    display: flex;
+    /* display: flex; */
+    display: none;
 }
 .nav2 ul{
     display: flex;
+    display: none;
     list-style-type: none;
     justify-content: space-between;
 }
@@ -75,16 +77,15 @@ header{
 }
 .allhead{
     height: 15vh;
-    display: flex;
-    flex-wrap: wrap;
-    /* display: none; */
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
 }
 .burger-menu{
-    visibility: hidden;
+    /* visibility: hidden; */
     position: relative;
     z-index: 2;
     display: flex;
@@ -179,28 +180,34 @@ header{
     width: 50px;
     height: 30px;
 }
-
-
 #section1{
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid rgba(192, 192, 192, 0.425); 
+    height: 150vh;
+    display: grid;
+    grid-template-areas: 
+    'block2'
+    'block1';
+    flex-direction: column;
+    border-bottom: none; 
 }
 .block1{
-    width: 50%;
-    height: 100vh;
+    width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 20px;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    grid-area: block1;
+
 }
 .block2{
-    width: 50%;
+    width: 100%;
+    height: 70vh;
     display: flex;
     background-image: url(./shana-van-roosbroek-rwiLwcpHEyw-unsplash.jpg);
     background-size: cover;
+    grid-area: block2;
 }
 .but1,
 .but2,
@@ -221,45 +228,62 @@ header{
     text-decoration: none;
     color: rgb(117, 117, 117);
 }
-#section2,
+#section2{
+    height: 150vh;
+    display: grid;
+    grid-template-areas: 
+    'block3'
+    'block4';
+    flex-direction: row;
+    border-bottom: none;
+}
 #section3{
-    height: 60vh;
-    display: flex;
+    height: 150vh;
+    display: grid;
+    grid-template-areas: 
+    'block6'
+    'block5';
     flex-direction: row;
     border-bottom: 2px solid rgba(192, 192, 192, 0.425);
 }
 .block3{
-    width: 30%;
+    width: 100%;
+    height: 70vh;
     display: flex;
     background-image: url(./tetiana-shadrina-X4YjqVCn7xI-unsplash.jpg);
     background-size: cover;
+    grid-area: block3;
 }
 .block4{
-    width: 70%;
-    height: 60vh;
+    width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    /* padding-right: 60px; */
+    padding-right: 0px;
+    padding-left: 0px;
+    grid-area: block4;
 }
 .block5{
-    width: 70%;
-    height: 60vh;
+    width: 100%;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    padding-right: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    grid-area: block5;
 }
 .block6{
-    width: 30%;
+    width: 100%;
+    height: 70vh;
     display: flex;
     background-image: url(./yaniv-cohen-DxsavJrtuZg-unsplash.jpg);
     background-size: cover;
+    grid-area: block6;
 }
 #section4{
-    height: 90vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,7 +316,7 @@ header{
     z-index: 2;
     background-color: rgba(0, 0, 0, 0.553);
     display: none;
-    width: 250px;
+    width: 300px;
     height: 45vh;
 }
 .cover1 a{
@@ -305,7 +329,7 @@ header{
 .foto3 .foto img,
 .foto4 .foto img,
 .foto5 .foto img{
-    width: 250px;
+    width: 300px;
     height: 100%;
     position: relative;
     z-index: 1;
@@ -327,14 +351,14 @@ header{
 .arrow2 .arrow{
     filter: invert(100%);
     position: relative;
-    left: -100px;
+    left: -90px;
     top: 50%;
     z-index: 3;
 }
 .arrow1 .arrow{
     filter: invert(100%);
     position: relative;
-    left: 100px;
+    left: 90px;
     top: 50%;
     z-index: 3;
 }
@@ -365,7 +389,7 @@ header{
     background-color: transparent;
 }
 #section5{
-    height: 100vh;
+    /* height: 170vh; */
 }
 .block8{
     width: 100%;
@@ -373,11 +397,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    /* display: grid;
-    grid-template-areas: 
-    'card1 card2 card3'
-    'card4 card5 card6'; */
-    /* grid-gap: 20px; */
     justify-content: center;
 }
 .block8 p{
@@ -390,7 +409,7 @@ header{
     line-height: 28px;
 }
 .card1{
-    width: 30%;
+    width: 90%;
     height: 300px;
     grid-area: card1;
     display: flex;
@@ -399,11 +418,10 @@ header{
     align-items: center;
     text-align: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.293);
-    border-right: 2px solid rgba(0, 0, 0, 0.293);
     padding: 10px;
 }
 .card2{
-    width: 30%;
+    width: 90%;
     height: 300px;
     grid-area: card2;
     display: flex;
@@ -411,12 +429,11 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid rgba(0, 0, 0, 0.293);
-    border-right: 2px solid rgba(0, 0, 0, 0.293);
     padding: 10px;
     text-align: center;
 }
 .card3{
-    width: 30%;
+    width: 90%;
     height: 300px;
     grid-area: card3;
     display: flex;
@@ -429,32 +446,32 @@ header{
    
 }
 .card4{
-    width: 30%;
+    width: 90%;
     height: 300px;
     grid-area: card4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.293);
     padding: 10px;
     text-align: center;
     margin-top: 0;
 }
 .card5{
-    width: 30%;
+    width: 90%;
     height: 300px;
     grid-area: card5;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-right: 2px solid rgba(0, 0, 0, 0.293);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.293);
     padding: 10px;
     text-align: center;
 }
 .card6{
-    width: 30%;
+    width: 90%;
     height: 300px;
     grid-area: card6;
     display: flex;
@@ -463,9 +480,10 @@ header{
     align-items: center;
     padding: 10px;
     text-align: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.293);
 }
 #section6{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -489,8 +507,9 @@ header{
 }
 .partName{
     width: 100%;
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .partName > div{
@@ -508,8 +527,9 @@ header{
 }
 .partCont{
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 5vh;
+    /* height: 5vh; */
 }
 .partCont .radio{
     margin-left: 25px;
@@ -594,6 +614,3 @@ footer{
     border: 2px solid rgba(117, 117, 117, 0.37);
     border-radius: 50%;
 }
-
-
-
